@@ -13,63 +13,153 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(),
         body: Container(
-          color: Colors.blue,
-          alignment: Alignment.center,
-          child: Container(
-              alignment: Alignment.center,
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 2.0),
-              width: 200,
-              height: 500,
-              decoration: const BoxDecoration(
-                color: Colors.red,
-                boxShadow: [
-                  BoxShadow(
-                    color: Color.fromARGB(255, 96, 4, 91),
-                    blurRadius: 10.0,
-                    spreadRadius: 6.0,
-                    offset: Offset(2.0, 10.0),
+         child : Column(children: 
+         [
+          Container(
+            width: double.infinity,
+            height: 200,
+            decoration:const BoxDecoration(
+
+              image:DecorationImage(
+                fit:BoxFit.fill,
+                image: NetworkImage('https://media.istockphoto.com/photos/touch-of-fresh-moss-in-the-forest-picture-id1283852667'))
+            ),
+            ),
+            Center(
+              
+              child:  Row(children: [
+                // SizedBox(width: 50),
+                Container(
+                  padding: EdgeInsets.only(left:10),
+                  margin: EdgeInsets.only(top: 10,left:10),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black,width: 2),
+                    borderRadius: BorderRadius.circular(10)
                   ),
-                ],
-                border: Border(
-                  top: BorderSide(
-                      color: Color.fromARGB(255, 55, 54, 54), width: 2),
-                  bottom: BorderSide(
-                      color: Color.fromARGB(255, 27, 26, 26), width: 4),
-                  left: BorderSide(
-                      color: Color.fromARGB(255, 55, 34, 34), width: 6),
-                  right: BorderSide(
-                      color: Color.fromARGB(255, 69, 34, 34), width: 8),
+                  width: 150,
+                  child: const Card(
+                     color:Colors.transparent,
+                    elevation: 50,
+                    shadowColor: Colors.green,
+                    child:Text('Kitty',style:TextStyle(fontSize: 30,color:Colors.green)),
+
+                  ),
+                  ),
+                
+                Container(
+                 
+                  padding: EdgeInsets.only(left:10),
+                  margin: EdgeInsets.only(top: 10,left:10),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.blue,width: 4),
+                    borderRadius: BorderRadius.circular(10)
+                  ),
+                  width: 150,
+                    child: const Card(
+                       color:Colors.transparent,
+                    elevation: 50,
+                    shadowColor: Colors.red,
+                    child: Text('2Month',style:TextStyle(fontSize: 30,color:Colors.red)),
+                  ),
                 ),
-              ),
-              child: Card(
-                  color: Colors.black,
-                  borderOnForeground: true,
-                  elevation: 40,
-                  child: Column(
-                     crossAxisAlignment: CrossAxisAlignment.start,
-                     mainAxisSize: MainAxisSize.max,
-                    children: const [
-                      Text(
-                        'Hello World',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 228, 14, 193),
-                        ),
-                      ),
-                      Text(
-                        'This is a card',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 228, 14, 193),
-                        ),
-                      ),
-                      
-                    ],
-                  ))),
+                
+                Container(
+                  padding: EdgeInsets.only(left:10),
+                  margin: EdgeInsets.only(top: 10,left:10),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.grey,Color.fromARGB(255, 100, 98, 98),Colors.black]
+                    ),
+                    border: Border.all(color: Colors.purple,width: 6),
+                    borderRadius: BorderRadius.circular(10)
+                  ),
+                  width: 150,
+                    child: const Card(
+                      color:Colors.transparent,
+                    elevation: 50,
+                    shadowColor: Colors.orange,
+                    child: Text('Female',style:TextStyle(fontSize: 30,color:Colors.orange,)),
+                  ),
+                ),
+                
+              ]),
+            ),
+            Divider(height: 50,color:Colors.blue,thickness: 5,),
+           Container(
+            width: 400,
+            height: 200,
+            decoration:const BoxDecoration(
+
+              image:DecorationImage(
+                fit:BoxFit.fill,
+                image: NetworkImage('https://media.istockphoto.com/photos/touch-of-fresh-moss-in-the-forest-picture-id1283852667'))
+            ),
+            ),
+            Center(
+              
+              child:  Row(children: [
+                // SizedBox(width: 50),
+                Container(
+                  padding: EdgeInsets.only(left:10),
+                  margin: EdgeInsets.only(top: 10,left:10),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black,width: 2),
+                    borderRadius: BorderRadius.circular(10)
+                  ),
+                  width: 150,
+                  child: const Card(
+                     color:Colors.transparent,
+                    elevation: 50,
+                    shadowColor: Colors.green,
+                    child:Text('Kitty',style:TextStyle(fontSize: 30,color:Colors.green)),
+
+                  ),
+                  ),
+                
+                Container(
+                 
+                  padding: EdgeInsets.only(left:10),
+                  margin: EdgeInsets.only(top: 10,left:10),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.blue,width: 4),
+                    borderRadius: BorderRadius.circular(10)
+                  ),
+                  width: 150,
+                    child: const Card(
+                       color:Colors.transparent,
+                    elevation: 50,
+                    shadowColor: Colors.red,
+                    child: Text('2Month',style:TextStyle(fontSize: 30,color:Colors.red)),
+                  ),
+                ),
+                
+                Container(
+                  padding: EdgeInsets.only(left:10),
+                  margin: EdgeInsets.only(top: 10,left:10),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.grey,Color.fromARGB(255, 100, 98, 98),Colors.black]
+                    ),
+                    border: Border.all(color: Colors.purple,width: 6),
+                    borderRadius: BorderRadius.circular(10)
+                  ),
+                  width: 150,
+                    child: const Card(
+                      color:Colors.transparent,
+                    elevation: 50,
+                    shadowColor: Colors.orange,
+                    child: Text('Female',style:TextStyle(fontSize: 30,color:Colors.orange,)),
+                  ),
+                ),
+                
+              ]),
+            ),
+           
+              
+         ]
         ),
+          )
+         
       ),
     );
   }
